@@ -1,8 +1,9 @@
 import React, {Fragment} from 'react';
+import Policies from "./components/policies";
 
 const App = () => (
     <Fragment>
-        <h1>Your policies</h1>
+        <Policies/>
     </Fragment>
 );
 

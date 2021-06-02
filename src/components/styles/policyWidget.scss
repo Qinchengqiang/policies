@@ -1,0 +1,13 @@
+.widget {
+  height: 168px;
+  margin-bottom: 32px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 25px 20px rgba(172, 168, 129, 0.2),
+                0 10px 20px rgba(197, 202, 209, 0.56);
+  }
+
+}
