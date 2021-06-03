@@ -1,10 +1,10 @@
 import React from 'react';
 import './styles/policyWidget.css';
 
-const PolicyWidget = () => {
+const PolicyWidget = (props) => {
     return (
         <div className='widget w-100'>
-            widget
+            {props.policy.id}
         </div>
     );
 };

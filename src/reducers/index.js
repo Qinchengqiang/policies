@@ -1,5 +1,7 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({
+import policies from "./policiesReducer";
 
+export default combineReducers({
+    policies,
 });

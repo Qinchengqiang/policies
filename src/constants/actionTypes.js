@@ -1,0 +1,1 @@
+export const GET_POLICIES = 'GET_POLICIES';
