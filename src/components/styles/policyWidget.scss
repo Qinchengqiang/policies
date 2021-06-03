@@ -4,10 +4,93 @@
   background: #FFFFFF;
   border-radius: 3px;
   cursor: pointer;
+  padding: 16px;
 
   &:hover {
     box-shadow: 0 25px 20px rgba(172, 168, 129, 0.2),
-                0 10px 20px rgba(197, 202, 209, 0.56);
+    0 10px 20px rgba(197, 202, 209, 0.56);
   }
 
+  .policyCard {
+    .policyCard-content {
+      width: 870px;
+
+      .card-upperContent {
+        border-bottom: 1px solid #E0E4E8;
+
+        .widgetTitle,
+        .widgetDescription {
+          margin-left: 16px;
+          margin-bottom: 16px;
+        }
+
+        .widgetTitle {
+          margin-bottom: 4px;
+          font-family: "brandon-grotesque", sans-serif;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 30px;
+          color: #2D2D2D;
+        }
+
+        .widgetDescription {
+          font-family: "bitter", serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 21px;
+          color: #73777C;
+        }
+      }
+
+      .card-lowerContent {
+        .small-label {
+          margin: 16px 0 0 0;
+          padding: 0 16px 0 16px;
+          border-right: 1px solid #E0E4E8;
+
+          p { margin-bottom: 0;}
+          .value {
+            font-family: "brandon-grotesque", sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: #2D2D2D;
+            height: 24px;
+            margin-bottom: 4px;
+          }
+
+          .policyStatus {
+            font-family: "brandon-grotesque", sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #00A082;
+          }
+
+          .labelName {
+            font-family: "bitter", serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #73777C;
+          }
+
+          .status {
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background: #00A082;
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+
+    .policyCard-Logo {
+      margin-left: 24px;
+    }
+  }
 }
