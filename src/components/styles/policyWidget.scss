@@ -12,78 +12,179 @@
   }
 
   .policyCard {
+    @media (max-width: 991.98px) {
+      width: 100%;
+    }
+
     .policyCard-content {
       width: 870px;
+      @media (max-width: 991.98px) {
+        width: 100%;
+      }
 
       .card-upperContent {
         border-bottom: 1px solid #E0E4E8;
 
-        .widgetTitle,
-        .widgetDescription {
-          margin-left: 16px;
-          margin-bottom: 16px;
+        .card-upper {
+          max-width: 100%;
+          @media (max-width: 991.98px) and (min-width: 768px) {
+            max-width: calc(100% - 120px);
+          }
+
+          .badgeBox {
+            width: 48px;
+            height: 48px;
+            max-width: 48px;
+            max-height: 48px;
+            @media (max-width: 767.98px) {
+              display: none !important;
+            }
+          }
+
+          .card-upperWords {
+            max-width: calc(100% - 48px);
+            @media (max-width: 767.98px) {
+              max-width: 100%;
+            }
+
+            h3, p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              max-width: 100%;
+            }
+
+            .widgetTitle,
+            .widgetDescription {
+              margin-left: 16px;
+              margin-bottom: 16px;
+            }
+
+            .widgetTitle {
+              margin-bottom: 4px;
+              font-family: "brandon-grotesque", sans-serif;
+              font-size: 24px;
+              font-weight: bold;
+              line-height: 30px;
+              color: #2D2D2D;
+              @media (max-width: 991.98px) {
+                font-size: 20px;
+                line-height: 30px;
+              }
+            }
+
+            .widgetDescription {
+              font-family: "bitter", serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              line-height: 21px;
+              color: #73777C;
+            }
+          }
         }
 
-        .widgetTitle {
-          margin-bottom: 4px;
-          font-family: "brandon-grotesque", sans-serif;
-          font-size: 24px;
-          font-weight: bold;
-          line-height: 30px;
-          color: #2D2D2D;
-        }
+        .policyCard-middleLogo {
+          width: 109px;
 
-        .widgetDescription {
-          font-family: "bitter", serif;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 21px;
-          color: #73777C;
+          img {
+            width: 100%;
+          }
+
+          @media (min-width: 992px) {
+            display: none !important;
+          }
+          @media (max-width: 767.98px) {
+            display: none !important;
+          }
         }
       }
 
       .card-lowerContent {
-        .small-label {
-          margin: 16px 0 0 0;
-          padding: 0 16px 0 16px;
-          border-right: 1px solid #E0E4E8;
-
-          p { margin-bottom: 0;}
-          .value {
-            font-family: "brandon-grotesque", sans-serif;
-            font-size: 16px;
-            line-height: 24px;
-            color: #2D2D2D;
-            height: 24px;
-            margin-bottom: 4px;
+        .card-lower {
+          @media (max-width: 767.98px) {
+            width: calc(100% - 85px) !important;
           }
 
-          .policyStatus {
-            font-family: "brandon-grotesque", sans-serif;
-            font-size: 14px;
-            line-height: 24px;
-            text-align: right;
-            text-transform: uppercase;
-            font-weight: bold;
-            color: #00A082;
+          .small-label {
+            margin: 16px 0 0 0;
+            padding: 0 16px 0 16px;
+            border-right: 1px solid #E0E4E8;
+
+            p {
+              margin-bottom: 0;
+            }
+
+            .value {
+              font-family: "brandon-grotesque", sans-serif;
+              font-size: 16px;
+              line-height: 24px;
+              color: #2D2D2D;
+              height: 24px;
+              margin-bottom: 4px;
+            }
+
+            .policyStatus {
+              font-family: "brandon-grotesque", sans-serif;
+              font-size: 14px;
+              line-height: 24px;
+              text-align: right;
+              text-transform: uppercase;
+              font-weight: bold;
+              color: #00A082;
+            }
+
+            .labelName {
+              font-family: "bitter", serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 18px;
+              color: #73777C;
+            }
+
+            .status {
+              border-radius: 50%;
+              width: 8px;
+              height: 8px;
+              background: #00A082;
+              margin-left: 4px;
+            }
           }
 
-          .labelName {
-            font-family: "bitter", serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 18px;
-            color: #73777C;
+          .status-label {
+            @media (max-width: 767.98px) {
+              border-right: 0 !important;
+              max-width: 240px !important;
+              width: 100%;
+              min-width: auto !important;
+            }
+
+            p {
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
           }
 
-          .status {
-            border-radius: 50%;
-            width: 8px;
-            height: 8px;
-            background: #00A082;
-            margin-left: 4px;
+          .payment,
+          .price,
+          .renewal {
+            @media (max-width: 767.98px) {
+              display: none !important;
+            }
+          }
+        }
+
+        .policyCard-smallLogo {
+          width: 84px;
+
+          img {
+            width: 100%;
+          }
+
+          @media (min-width: 768px) {
+            display: none !important;
           }
         }
       }
@@ -91,6 +192,14 @@
 
     .policyCard-Logo {
       margin-left: 24px;
+      @media (max-width: 991.98px) {
+        display: none !important;
+      }
     }
   }
+}
+
+.activeWidget {
+  box-shadow: 0 25px 20px rgba(172, 168, 129, 0.2),
+  0 10px 20px rgba(197, 202, 209, 0.56);
 }

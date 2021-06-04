@@ -4,11 +4,11 @@ import circleBtn from '../../assets/images/circle-chevronRight.png';
 
 const WidgetBadge = (props) => {
     return (
-        <div className='circleBtn' style={{height: '48px', width: '48px'}}>
-            {props.isHovering ?
-                <img className='w-100' src={activeCircleBtn} alt=''/>
+        <div className='w-100'>
+            {props.active ?
+                <img  className='w-100' src={activeCircleBtn} alt=''/>
                 :
-                <img className='w-100' src={circleBtn} alt=''/>
+                <img  className='w-100' src={circleBtn} alt=''/>
             }
         </div>
     );

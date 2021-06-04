@@ -1,4 +1,4 @@
-import React, {Suspense, useEffect} from 'react';
+import React, {Suspense, useEffect, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {fetchPolicies} from "../actions/policiesActions";
 import _ from "lodash";
@@ -19,6 +19,12 @@ const loadPolicies = (dispatch) => {
 const PoliciesList = () => {
     const dispatch = useDispatch();
     const policiesReduxState = useSelector(state => (state.policies));
+    const [actives, setActives] = useState([]);
+
+    const onClick = (policyId) => {
+        if (actives.indexOf(policyId) === -1) setActives([...actives, policyId])
+        else setActives(actives.filter(value => value !== policyId));
+    };
 
     useEffect(() => {
         loadPolicies(dispatch);
@@ -37,7 +43,7 @@ const PoliciesList = () => {
                 policiesReduxState.map(policy => (
                     <Suspense fallback={<div className='widget w-100 text-center text-black-50'>loading...</div>}
                     key={policy.id.toString()}>
-                        <PolicyWidget policy={policy}/>
+                        <PolicyWidget policy={policy} onClick={onClick} actives={actives}/>
                     </Suspense>
                 ))
             }
