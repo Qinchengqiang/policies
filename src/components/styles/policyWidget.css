@@ -1,0 +1,193 @@
+.widget {
+  height: 168px;
+  margin-bottom: 32px;
+  background: #FFFFFF;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 16px;
+}
+.widget:hover {
+  box-shadow: 0 25px 20px rgba(172, 168, 129, 0.2), 0 10px 20px rgba(197, 202, 209, 0.56);
+}
+@media (max-width: 991.98px) {
+  .widget .policyCard {
+    width: 100%;
+  }
+}
+.widget .policyCard .policyCard-content {
+  width: 870px;
+}
+@media (max-width: 991.98px) {
+  .widget .policyCard .policyCard-content {
+    width: 100%;
+  }
+}
+.widget .policyCard .policyCard-content .card-upperContent {
+  border-bottom: 1px solid #E0E4E8;
+}
+.widget .policyCard .policyCard-content .card-upperContent .card-upper {
+  max-width: 100%;
+}
+@media (max-width: 991.98px) and (min-width: 768px) {
+  .widget .policyCard .policyCard-content .card-upperContent .card-upper {
+    max-width: calc(100% - 120px);
+  }
+}
+.widget .policyCard .policyCard-content .card-upperContent .card-upper .badgeBox {
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+}
+@media (max-width: 767.98px) {
+  .widget .policyCard .policyCard-content .card-upperContent .card-upper .badgeBox {
+    display: none !important;
+  }
+}
+.widget .policyCard .policyCard-content .card-upperContent .card-upper .card-upperWords {
+  max-width: calc(100% - 48px);
+}
+@media (max-width: 767.98px) {
+  .widget .policyCard .policyCard-content .card-upperContent .card-upper .card-upperWords {
+    max-width: 100%;
+  }
+}
+.widget .policyCard .policyCard-content .card-upperContent .card-upper .card-upperWords h3, .widget .policyCard .policyCard-content .card-upperContent .card-upper .card-upperWords p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}
+.widget .policyCard .policyCard-content .card-upperContent .card-upper .card-upperWords .widgetTitle,
+.widget .policyCard .policyCard-content .card-upperContent .card-upper .card-upperWords .widgetDescription {
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+.widget .policyCard .policyCard-content .card-upperContent .card-upper .card-upperWords .widgetTitle {
+  margin-bottom: 4px;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #2D2D2D;
+}
+@media (max-width: 991.98px) {
+  .widget .policyCard .policyCard-content .card-upperContent .card-upper .card-upperWords .widgetTitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.widget .policyCard .policyCard-content .card-upperContent .card-upper .card-upperWords .widgetDescription {
+  font-family: "bitter", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #73777C;
+}
+.widget .policyCard .policyCard-content .card-upperContent .policyCard-middleLogo {
+  width: 109px;
+}
+.widget .policyCard .policyCard-content .card-upperContent .policyCard-middleLogo img {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .widget .policyCard .policyCard-content .card-upperContent .policyCard-middleLogo {
+    display: none !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .widget .policyCard .policyCard-content .card-upperContent .policyCard-middleLogo {
+    display: none !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .widget .policyCard .policyCard-content .card-lowerContent .card-lower {
+    width: calc(100% - 85px) !important;
+  }
+}
+.widget .policyCard .policyCard-content .card-lowerContent .card-lower .small-label {
+  margin: 16px 0 0 0;
+  padding: 0 16px 0 16px;
+  border-right: 1px solid #E0E4E8;
+}
+.widget .policyCard .policyCard-content .card-lowerContent .card-lower .small-label p {
+  margin-bottom: 0;
+}
+.widget .policyCard .policyCard-content .card-lowerContent .card-lower .small-label .value {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2D2D2D;
+  height: 24px;
+  margin-bottom: 4px;
+}
+.widget .policyCard .policyCard-content .card-lowerContent .card-lower .small-label .policyStatus {
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #00A082;
+}
+.widget .policyCard .policyCard-content .card-lowerContent .card-lower .small-label .labelName {
+  font-family: "bitter", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: #73777C;
+}
+.widget .policyCard .policyCard-content .card-lowerContent .card-lower .small-label .status {
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background: #00A082;
+  margin-left: 4px;
+}
+@media (max-width: 767.98px) {
+  .widget .policyCard .policyCard-content .card-lowerContent .card-lower .status-label {
+    border-right: 0 !important;
+    max-width: 240px !important;
+    width: 100%;
+    min-width: auto !important;
+  }
+}
+.widget .policyCard .policyCard-content .card-lowerContent .card-lower .status-label p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (max-width: 767.98px) {
+  .widget .policyCard .policyCard-content .card-lowerContent .card-lower .payment,
+.widget .policyCard .policyCard-content .card-lowerContent .card-lower .price,
+.widget .policyCard .policyCard-content .card-lowerContent .card-lower .renewal {
+    display: none !important;
+  }
+}
+.widget .policyCard .policyCard-content .card-lowerContent .policyCard-smallLogo {
+  width: 84px;
+}
+.widget .policyCard .policyCard-content .card-lowerContent .policyCard-smallLogo img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .widget .policyCard .policyCard-content .card-lowerContent .policyCard-smallLogo {
+    display: none !important;
+  }
+}
+.widget .policyCard .policyCard-Logo {
+  margin-left: 24px;
+}
+@media (max-width: 991.98px) {
+  .widget .policyCard .policyCard-Logo {
+    display: none !important;
+  }
+}
+
+.activeWidget {
+  box-shadow: 0 25px 20px rgba(172, 168, 129, 0.2), 0 10px 20px rgba(197, 202, 209, 0.56);
+}
+
+/*# sourceMappingURL=policyWidget.css.map */
